@@ -21,7 +21,7 @@
         Course: Software Development 20S
         Teacher: Mr. Hardman
         School: Pembina Trails Early College
-        Date Last Modified:
+        Date Last Modified: 3/15/2022
     -->
 
     <header>
@@ -63,9 +63,10 @@
       <p>
         The axolotl was named by the Aztec people after Xolotl, their god of
         fire and lightning, axolotl can also be translated to
-        <em>Water Dog</em> because of Xolotl's dog like head. In Aztec
-        mythology, Xolotl needed to be sacrificed so the sun could move, to
-        avoid this he transformed into an axolotl to avoid capture. He was
+        <em>Water Dog</em> because of Xolotl's dog like head, and also
+        <em>Water Monster</em> since Xolotl was also the god of monsters. In
+        Aztec mythology, Xolotl needed to be sacrificed so the sun could move,
+        to avoid this he transformed into an axolotl to avoid capture. He was
         eventually tracked down by the wind god and sacrificed. Axolotls were
         important to the Aztec people both spiritually and as food since they
         were part of their diet. They also stirred them into a syrup as a folk
@@ -89,5 +90,102 @@
       />
       <figcaption>Xolotl, the Aztec god of fire and lightning</figcaption>
     </figure>
+
+    <footer>
+      <!-- Allows the user to log in to the axolotl fanclub-->
+      <form name="log-into-axolotl-fanclub" id="log-in" method="get">
+        <fieldset form="log-in" name="log-in-contents">
+          <legend>
+            Log into the <strong>OFFCIAL</strong> axolotl fanclub!
+          </legend>
+
+          <!--Allows the user to input their email for sign in-->
+          <label for="email">Email (required):</label>
+          <input
+            type="email"
+            id="email"
+            name="log-in-email"
+            minlength="7"
+            maxlength="50"
+            required
+          />
+
+          <br />
+          <br />
+
+          <!--Allows the user to input their password for sign in-->
+          <label for="password">Password (required)</label>
+          <input
+            type="password"
+            id="password"
+            name="login-password"
+            minlength="3"
+            maxlength="50"
+            required
+          />
+
+          <br />
+          <br />
+
+          <!--Submits email and password for sign in-->
+          <input type="submit" value="Log in" />
+        </fieldset>
+      </form>
+
+      <form name="sign-up-for-axolotl-fanclub" id="sign-up" method="get">
+        <!--Allows the user to sign up for the axolotl fanclub-->
+        <fieldset form="sign-up" name="sign-up-contents">
+          <legend>
+            Not a member? Sign up for the <strong>OFFCIAL</strong> axolotl
+            fanclub today!
+          </legend>
+
+          <!--Allows the user to put in their email to sign up-->
+          <label for="email-sign-up"> Email (required):</label>
+          <input
+            type="email"
+            id="email-sign-up"
+            name="sign-up-email"
+            minlength="7"
+            maxlength="50"
+            required
+          />
+
+          <br />
+          <br />
+
+          <!--Allows user to input a password for their account-->
+          <label for="password-sign-up"> Password (required):</label>
+          <input
+            type="password"
+            id="password-sign-up"
+            name="sign-up-password"
+            minlength="3"
+            maxlength="50"
+            required
+          />
+
+          <br />
+          <br />
+
+          <!--Allows user to input a user name or their account-->
+          <label for="user-name">User name (required):</label>
+          <input
+            type="text"
+            id="user-name"
+            name="user-name"
+            minlength="1"
+            maxlength="12"
+            required
+          />
+
+          <br />
+          <br />
+
+          <!--Allows the user to submit the sign up data-->
+          <input type="submit" value="Sign up" />
+        </fieldset>
+      </form>
+    </footer>
   </body>
 </html>
